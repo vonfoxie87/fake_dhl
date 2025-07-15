@@ -112,7 +112,7 @@ class _DHLTrackingScreenState extends State<DHLTrackingScreen> {
                   Icon(Icons.arrow_back),
                   Text(
                     'ZALANDO',
-                    style: TextStyle(fontWeight: FontWeight.w900, fontSize: 16),
+                    style: TextStyle(fontWeight: FontWeight.w900, fontSize: 12),
                   ),
                   Icon(Icons.share),
                 ],
@@ -145,11 +145,11 @@ class _DHLTrackingScreenState extends State<DHLTrackingScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Bezorgd op', style: TextStyle(color: Colors.black54)),
+                  Text('Bezorgd op', style: TextStyle(color: Colors.black54, fontSize: 12)),
                   SizedBox(height: 4),
                   Text(
                     _formattedDeliveryTime(),
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
                   ),
                 ],
               ),
@@ -165,8 +165,8 @@ class _DHLTrackingScreenState extends State<DHLTrackingScreen> {
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
                 child: ListTile(
                   leading: const Icon(Icons.help_outline),
-                  title: const Text('Heb je een vraag over je pakket?', style: TextStyle(fontWeight: FontWeight.bold)),
-                  subtitle: const Text('Tracy helpt je verder'),
+                  title: const Text('Heb je een vraag over je pakket?', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12)),
+                  subtitle: const Text('Tracy helpt je verder', style: TextStyle(fontSize: 12)),
                   trailing: const Icon(Icons.chevron_right),
                   onTap: () {},
                 ),
@@ -182,7 +182,7 @@ class _DHLTrackingScreenState extends State<DHLTrackingScreen> {
 
             AddressBlock(
               title: 'Bij de buren',
-              name: '$_street,\n$_city',
+              name: '$_street\n$_city',
               //name: 'Amaril 5\n2719TR Zoetermeer\nNL',
             ),
                         const Divider(
@@ -225,7 +225,7 @@ class _DHLTrackingScreenState extends State<DHLTrackingScreen> {
                 elevation: 2,
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
                 child: ListTile(
-                  title: const Text('Toon details', style: TextStyle(fontWeight: FontWeight.bold)),
+                  title: const Text('Toon details', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12)),
                   //subtitle: const Text('Tracy helpt je verder'),
                   trailing: const Icon(Icons.chevron_right),
                   onTap: () {},
@@ -258,7 +258,7 @@ class YellowBubble extends StatelessWidget {
         text,
         style: const TextStyle(
           color: Colors.black87,
-          fontSize: 16,
+          fontSize: 12,
         ),
       ),
     );
@@ -323,9 +323,9 @@ class AddressBlock extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12)),
           const SizedBox(height: 4),
-          Text(name, style: const TextStyle(fontSize: 15)),
+          Text(name, style: const TextStyle(fontSize: 12)),
         ],
       ),
     );
