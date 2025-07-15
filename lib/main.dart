@@ -295,7 +295,7 @@ class TimelineWidget extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Image.asset(
-                './images/house.png',
+                'assets/images/house.png',
                 width: MediaQuery.of(context).size.width * 0.9,  // Breedte van het scherm pakken
                 fit: BoxFit.cover,
               ),
