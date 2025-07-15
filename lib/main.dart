@@ -2,12 +2,16 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'dart:html' as html;
 
+
 void main() {
+  
   runApp(const DHLCloneApp());
+  
 }
 
 class DHLCloneApp extends StatelessWidget {
   const DHLCloneApp({super.key});
+  
 
   @override
   Widget build(BuildContext context) {
@@ -105,14 +109,15 @@ class _DHLTrackingScreenState extends State<DHLTrackingScreen> {
           children: [
             // 🔽 Huidige locatie tonen
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12),
+              padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 13),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: const [
                   Icon(Icons.arrow_back),
                   Text(
                     'ZALANDO',
-                    style: TextStyle(fontWeight: FontWeight.w900, fontSize: 12),
+                    
+                    style: TextStyle(fontWeight: FontWeight.w900, fontSize: 13),
                   ),
                   Icon(Icons.share),
                 ],
@@ -145,11 +150,11 @@ class _DHLTrackingScreenState extends State<DHLTrackingScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Bezorgd op', style: TextStyle(color: Colors.black54, fontSize: 12)),
+                  Text('Bezorgd op', style: TextStyle(color: Colors.black54, fontSize: 13)),
                   SizedBox(height: 4),
                   Text(
                     _formattedDeliveryTime(),
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
                   ),
                 ],
               ),
@@ -165,8 +170,8 @@ class _DHLTrackingScreenState extends State<DHLTrackingScreen> {
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
                 child: ListTile(
                   leading: const Icon(Icons.help_outline),
-                  title: const Text('Heb je een vraag over je pakket?', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12)),
-                  subtitle: const Text('Tracy helpt je verder', style: TextStyle(fontSize: 12)),
+                  title: const Text('Heb je een vraag over je pakket?', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13)),
+                  subtitle: const Text('Tracy helpt je verder', style: TextStyle(fontSize: 11)),
                   trailing: const Icon(Icons.chevron_right),
                   onTap: () {},
                 ),
@@ -225,7 +230,7 @@ class _DHLTrackingScreenState extends State<DHLTrackingScreen> {
                 elevation: 2,
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
                 child: ListTile(
-                  title: const Text('Toon details', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12)),
+                  title: const Text('Toon details', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13)),
                   //subtitle: const Text('Tracy helpt je verder'),
                   trailing: const Icon(Icons.chevron_right),
                   onTap: () {},
@@ -258,7 +263,7 @@ class YellowBubble extends StatelessWidget {
         text,
         style: const TextStyle(
           color: Colors.black87,
-          fontSize: 12,
+          fontSize: 13,
         ),
       ),
     );
@@ -323,9 +328,9 @@ class AddressBlock extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12)),
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13)),
           const SizedBox(height: 4),
-          Text(name, style: const TextStyle(fontSize: 12)),
+          Text(name, style: const TextStyle(fontSize: 13)),
         ],
       ),
     );
