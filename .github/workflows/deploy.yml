@@ -34,9 +34,7 @@ jobs:
       run: flutter pub get
 
     - name: Build Flutter web app
-    #  run: flutter build web --release
-      run: flutter build web --release --base-href="/fake_dhl/"
-
+      run: flutter build web --release
 
     - name: Deploy to GitHub Pages
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'
