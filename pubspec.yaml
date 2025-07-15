@@ -20,4 +20,5 @@ dev_dependencies:
 flutter:
   assets:
     - assets/images/
+    - assets/images/house.png
   uses-material-design: true
