@@ -32629,7 +32629,7 @@ A.EO.prototype={
 U(a){return new A.Bs(new A.a0q(),null)}}
 A.a0q.prototype={
 $2(a,b){var s=null,r=A.a8i(s,A.a7m(s,B.CE,s,4,s,s,s),s,s,12,12,16,s),q=A.cL(a,s,t.w).w,p=t.g
-return A.a_n(B.hL,A.b([r,A.ad0(A.b([new A.rl(A.amP(s,s,new A.pM("./images/house.png",s,s)),q.a.a*0.9,B.vk,s)],p),B.ft,B.dL)],p),B.hh)},
+return A.a_n(B.hL,A.b([r,A.ad0(A.b([new A.rl(A.amP(s,s,new A.pM("assets/images/house.png",s,s)),q.a.a*0.9,B.vk,s)],p),B.ft,B.dL)],p),B.hh)},
 $S:273}
 A.kH.prototype={
 U(a){return new A.dx(B.yd,A.aaM(A.b([A.ED(this.c,B.hp),B.Gm,A.ED(this.d,B.IO)],t.g),B.aK),null)}}
