@@ -198,7 +198,7 @@ class _DHLTrackingScreenState extends State<DHLTrackingScreen> {
 
             const AddressBlock(
               title: 'Ontvanger',
-              name: 'Stefan Janssen',
+              name: 'S. Meer',
             ),
             
             const Divider(
